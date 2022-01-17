@@ -46,6 +46,9 @@ li{
     display: flex;
     justify-content: space-between;
 }
+li:hover{
+    cursor: pointer;
+}
 
 .delete{
     text-decoration-line: line-through;
