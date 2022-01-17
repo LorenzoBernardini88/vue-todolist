@@ -21,7 +21,10 @@
         <main>
             <div class="list_container">
                 <ul v-for='(elemento,indice) in todo'>
-                    <li>{{elemento.text}}<i class="fas fa-times" @click='removeObj(indice)'></i></li>
+                    <li>
+                        <span :class='{delete: elemento.done}' @click='deleteObj(indice)'>{{elemento.text}}</span>
+                        <i class="fas fa-times" @click='removeObj(indice)'></i>
+                    </li>
                 </ul>
             </div>
         </main>
