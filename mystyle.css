@@ -41,4 +41,8 @@ ul li{
     color: black;
     list-style: none;
 }
+li{
+    display: flex;
+    justify-content: space-between;
+}
 
