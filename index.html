@@ -20,8 +20,8 @@
         </header>
         <main>
             <div class="list_container">
-                <ul v-for='elemento in todo'>
-                    <li>{{elemento.text}}<i class="fas fa-times"></i></li>
+                <ul v-for='(elemento,indice) in todo'>
+                    <li>{{elemento.text}}<i class="fas fa-times" @click='removeObj(indice)'></i></li>
                 </ul>
             </div>
         </main>

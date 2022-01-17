@@ -29,7 +29,7 @@ let app = new Vue({
 
     },
     methods:{
-
+        //funzione che aggiunge obj all'array 'todo' => elemento nella "to do list"
         addObj: function(){
             
             let obj= {
@@ -37,6 +37,11 @@ let app = new Vue({
                 done:'false'
             }
             this.todo.push(obj);
+        },
+        //funzione che rimuove obj dalla "to do list"
+        removeObj: function(indice){
+            this.todo.splice(indice,1);
+            return indice
         }
     }
 })
