@@ -1,0 +1,29 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    background-color: lightgrey;
+}
+header{
+    text-align: center;
+}
+.list_container{
+    margin-top: 40px;
+}
+#myapp{
+    width: 50%;
+    margin: 0 auto;
+}
+h1{
+    color: yellowgreen;
+}
+
+ul li{
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: black;
+    list-style: none;
+}
+
