@@ -15,17 +15,13 @@
     <div id="myapp">
         <header>
             <h1>TO DO LIST</h1>
-            <input type="text" placeholder="Inserisci un Todo">
-            <button>Add</button>
+            <input type="text" placeholder='Inserisci un "To do"' v-model='valoreTesto' >
+            <button @clik='todo.push(valoreTesto)'>Add</button>
         </header>
         <main>
             <div class="list_container">
-                <ul>
-                    <li><span>Discutere con Mila</span><i class="fas fa-times"></i></li>
-                    <li><span>Portare a spasso il cane</span><i class="fas fa-times"></i></li>
-                    <li><span>Aperitivo al Maboo</span><i class="fas fa-times"></i></li>
-                    <li><span>Andare al circolo di scacchi</span><i class="fas fa-times"></i></li>
-                    <li><span>Esercitarsi con la chitarra</span><i class="fas fa-times"></i></li>
+                <ul v-for='elemento in todo'>
+                    <li>{{elemento.text}}<i class="fas fa-times"></i></li>
                 </ul>
             </div>
         </main>

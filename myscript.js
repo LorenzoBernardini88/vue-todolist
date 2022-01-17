@@ -1,6 +1,7 @@
 let app = new Vue({
     el: '#myapp',
     data : {
+        valoreTesto : 'ciaocane',
         todo:[
             {
                 text:'Discutere con Milan',
@@ -21,7 +22,8 @@ let app = new Vue({
             {
                 text:'Esercitarsi con la chitarra',
                 done:'false'
-            }
+            },
+            
         ]
     }
 })
