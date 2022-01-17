@@ -15,7 +15,7 @@
     <div id="myapp">
         <header>
             <h1>TO DO LIST</h1>
-            <input type="text" placeholder='Inserisci un "To do"' v-model='valoreTesto' >
+            <input type="text" placeholder='Inserisci un "To do"' v-model='valoreTesto' @keyup.enter='addObj'>
             <button @click='addObj'>Add</button>
         </header>
         <main>
